@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<script src='index.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+	</head>
+	<body>
+		<div ID="equation">Тут будет уравнение</div><br>
+		<div ID="answer">Тут будет ответ</div><br>
+		Введите код для генерации (4-x значное число): <input type="password" id="input_key"><br>
+
+		Выберите уровень: <select name="example" type id="input_level">
+    			<option value="1">1</option>
+			<option value="2">2</option>
+		</select><br>
+
+
+		<input type="button" value ="Генерировать уравнение" onclick="generateEquation()">
+		<input type="button" value ="Показать ответ" onclick="showAnswer()">
+	<body>
+</html>
