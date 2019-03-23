@@ -1,0 +1,124 @@
+/*Таблица в 2 колонки*/
+table, tr, td, thead, tbody {
+    display: block!important;
+}
+
+tr {
+    float: left!important;
+    width: 50%!important;
+}
+td {
+    width: 524px;
+    height: 137px;
+}
+
+/*Если понадобится распечатать, то шапку с кнопками не печатаем*/
+.no-print {
+    line-height: 1.5;
+}
+@media print
+{
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
+
+#title {
+    font-size: 20pt;
+    font-family: chalkFont, arial, serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/*элемент, содеожащий одно уравнение*/
+.equation {
+    font-size: 18pt;
+    font-family: chalkFont, arial, serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+.number {
+    color: red;
+}
+
+body {
+    height: 100%;
+    background: url(blackChalkboard.jpg) center center fixed;
+    background-size: cover;
+
+    color: rgba(238, 238, 238, 0.9);
+}
+
+@font-face {
+    font-family: chalkFont;
+    src: url(lc-chalk.ttf);
+}
+
+input,
+select,
+form,
+.chalk,
+.number,
+option,
+textarea {
+    vertical-align: middle;
+    padding-left: 10px;
+    font-family: chalkFont, arial, serif;
+    font-size: 1.8em;
+    color: rgba(152, 220, 245, 0.9);
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+option {
+    background: #222;
+    font-size: 1.0em;
+}
+
+.chalkRose {
+    color: rgba(245, 147, 162, 0.9);
+}
+
+.chalkRegular {
+    color: rgba(152, 220, 245, 0.9);
+    font-family: chalkFont, arial, serif;
+    font-size: 1.0em;
+}
+
+.number {
+    font-size: 1.4em;
+}
+
+textarea {
+    height: 120px;
+    /*font-size: 1.4em;*/
+    line-height: 1em;
+    resize: none;
+}
+
+input {
+    cursor: pointer;
+    color: rgba(152, 220, 245, 0.9);
+    line-height: 1em;
+    padding: 5px;
+}
+
+input:focus {
+    background: rgba(238, 238, 238, 0.2);
+    color: rgba(152, 220, 245, 0.2);
+}
+
+.help {
+    font-size: 18pt;
+    font-family: chalkFont, arial, serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: rgba(240, 245, 243, 0.9);
+    text-align: center;
+}

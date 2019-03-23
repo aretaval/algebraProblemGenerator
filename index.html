@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+		<link rel="stylesheet" href="chalkboard.css">
+	</head>
+	<body>
+		<!-- Параметры генерации уравнений -->
+		<div class="no-print">
+			<a class="chalk">Тип:</a>
+			<select id=typeOfProblems class="chalkRose">
+				<option value=1>уравнение</option>
+				<option value=2>неравенство</option>
+			</select>
+
+			<a class="chalk">Сложность:</a>
+			<select id=typeOfEquations  class="chalkRose">
+				<option value=1>просто</option>
+				<option value=2>посложнее</option>
+				<option value=3>сложно</option>
+			</select>
+			<a class="chalk">Количество:</a>
+			<select id=numberOfEquations  class="chalkRose">
+				<option value=1>1</option>
+				<option value=5>5</option>
+				<option value=10 selected>10</option>
+				<option value=20>20</option>
+			</select>
+			<a class="chalk">Ключ:</a>
+			<input type="password" size=4 id="input_key"  class="chalkRose">
+
+			<script src='generator.js'></script>
+			<input type=button value="Показать задания" onclick="generateEquations()">
+			<input type="button" value="Показать ответы" id="answer_btn" onclick="showAnswersPage()">
+		</div>
+		<div id=title></div>
+		<div id=help class="help">
+			Выберите <a class="chalkRegular">тип</a> задания: уравнение или неравенство.
+			<br>
+			<br>
+			Затем выберите <a class="chalkRegular">сложность</a> задания и <a class="chalkRegular">количество</a> выриантов.
+			<br>
+			<br>
+			Задания выбираются случайным образом, но выбор зависит от <a class="chalkRegular">ключа</a>. Ключ - это целое число.
+			Введите определенное число и запомните его. Если позднее
+			Вам понадобится посмотреть выбранные варианты еще раз просто введите тот же <a class="chalkRegular">ключ</a>.
+			<br>
+			<br>
+			Для показа самих заданий нажмите <a class="chalkRegular">"Показать задания"</a>, 
+			дла показа заданий с ответами нажмите <a class="chalkRegular">"Показать ответы"</a>.
+		</div>
+	</body>
+</html>
