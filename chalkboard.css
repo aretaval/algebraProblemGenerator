@@ -35,7 +35,7 @@ td {
 
 /*элемент, содеожащий одно уравнение*/
 .equation {
-    font-size: 18pt;
+    font-size: 20pt;
     font-family: chalkFont, arial, serif;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -82,13 +82,25 @@ option {
 }
 
 .chalkRose {
-    color: rgba(245, 147, 162, 0.9);
+    color: rgba(245, 175, 186, 0.9);
 }
 
 .chalkRegular {
     color: rgba(152, 220, 245, 0.9);
     font-family: chalkFont, arial, serif;
     font-size: 1.0em;
+}
+
+.chalkButton {
+    font-family: chalkFont, arial, serif, bold;
+}
+.chalkButton:hover {
+    font-weight: bold;
+}
+.chalkButton:focus {
+    color: rgba(245, 245, 150, 0.9);
+    /*color: rgba(209, 245, 243, 0.9);*/
+    font-weight: bold;
 }
 
 .number {
@@ -110,8 +122,10 @@ input {
 }
 
 input:focus {
-    background: rgba(238, 238, 238, 0.2);
-    color: rgba(152, 220, 245, 0.2);
+    /*background: rgba(238, 238, 238, 0.2);*/
+    /*color: rgba(152, 220, 245, 0.2);*/
+    color: rgba(152, 220, 245, 0.9);
+    font-weight: bold;
 }
 
 .help {

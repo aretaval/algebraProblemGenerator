@@ -22,16 +22,22 @@
 			<a class="chalk">Количество:</a>
 			<select id=numberOfEquations  class="chalkRose">
 				<option value=1>1</option>
+				<option value=2>2</option>
+				<option value=3>3</option>
+				<option value=4>4</option>
 				<option value=5>5</option>
-				<option value=10 selected>10</option>
-				<option value=20>20</option>
+				<option value=6>6</option>
+				<option value=7>7</option>
+				<option value=8 selected>8</option>
+				<option value=9>9</option>
+				<option value=10>10</option>
 			</select>
 			<a class="chalk">Ключ:</a>
 			<input type="password" size=4 id="input_key"  class="chalkRose">
 
 			<script src='generator.js'></script>
-			<input type=button value="Показать задания" onclick="generateEquations()">
-			<input type="button" value="Показать ответы" id="answer_btn" onclick="showAnswersPage()">
+			<input type=button value="Показать задания" class="chalkButton" onclick="generateEquations()">
+			<input type="button" value="Показать ответы" id="answer_btn" class="chalkButton" onclick="showAnswersPage()">
 		</div>
 		<div id=title></div>
 		<div id=help class="help">
@@ -43,10 +49,10 @@
 			<br>
 			Задания выбираются случайным образом, но выбор зависит от <a class="chalkRegular">ключа</a>. Ключ - это целое число.
 			Введите определенное число и запомните его. Если позднее
-			Вам понадобится посмотреть выбранные варианты еще раз просто введите тот же <a class="chalkRegular">ключ</a>.
+			вам понадобится посмотреть выбранные варианты еще раз, просто введите тот же <a class="chalkRegular">ключ</a>.
 			<br>
 			<br>
-			Для показа самих заданий нажмите <a class="chalkRegular">"Показать задания"</a>, 
+			Для показа самих заданий нажмите <a class="chalkRegular">"Показать задания"</a>,
 			дла показа заданий с ответами нажмите <a class="chalkRegular">"Показать ответы"</a>.
 		</div>
 	</body>

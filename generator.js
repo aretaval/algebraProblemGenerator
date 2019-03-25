@@ -551,7 +551,7 @@ function generateProblem(i) {
                 case 3:
                 {
 
-                    text = generateEquation3();
+                    text = generateEquation2();
                     break;
                 }
             }
